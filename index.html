@@ -13,6 +13,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
 		rel="stylesheet">
+		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 	<title>ItineraryAI</title>
 </head>
 
@@ -21,51 +22,18 @@
 		<img class="logo" src="src/image/itineraryAI_logo.png" alt="ItineraryAI Logo">
 	</header>
 	<div class="container">
-		<h1>Mesmerizing an itinerary for your next trip</h1>
+		<h1></h1>
 		<p>
 			Plan your next adventure with ease as the ItineraryAI generator, transforms your words <br> and phrases into
 			detailed
 			travel
 			plans.
 		</p>
-		<div class="search-container">
+		<form class="search-container" id="form">
 			<input class="search-bar" type="search" placeholder="Enter your destination" autocomplete="off">
 			<input class="generate-btn" type="submit" value="Generate 📍">
-
-		</div>
-		<div class="travel-plan">
-			<p class="detailed-plan">
-			<p class="day1">
-			<h3>
-				Day 1: Paris
-			</h3>
-
-			Arrive in Paris and check into your hotel
-			Visit iconic landmarks like the Eiffel Tower and Notre-Dame Cathedral
-			Take a leisurely stroll along the Seine River
-			Enjoy dinner at a local bistro
-			</p>
-			<p class="day2">
-			<h3>
-				Day 2: Paris
-			</h3>
-
-			Explore the Louvre Museum and its famous artworks
-			Discover the beautiful gardens of Tuileries and Luxembourg
-			Take a boat cruise on the Seine
-			Spend the evening in the vibrant neighborhood of Le Marais
-			</p>
-			<p class="day3">
-				<h3>
-					Day 3: Versailles Day Trip
-				</h3>
-
-				Take a day trip to the Palace of Versailles
-				Explore the opulent rooms and gardens
-				Learn about French history and royalty
-				Return to Paris for departure or continue your adventure in France.
-			</p>
-			</p>
+		</form>
+		<div class="travel-plan" id="travel-plan">
 		</div>
 	</div>
 	<footer>
