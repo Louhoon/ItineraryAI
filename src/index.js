@@ -16,6 +16,15 @@ function generateItinerary(event) {
   let prompt = `User instructions : Generate a trip itinerary about ${searchInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let itineraryElement = document.querySelector("#travel-plan");
+  itineraryElement.classList.remove("hidden");
+  itineraryElement.innerHTML = `<lord-icon
+    src="https://cdn.lordicon.com/oqaajvyl.json"
+    trigger="loop"
+    colors="primary:#fad1e6,secondary:#e8308c"
+    style="width:30px;height:30px">
+</lord-icon> Generating an itinerary for ${searchInput.value}`;
+
   axios.get(apiUrl).then(displayItinerary);
 }
 

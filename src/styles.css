@@ -125,3 +125,18 @@ strong {
 	border-radius: 10px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+.hidden {
+  display: none;
+}
+
+.examples {
+  text-align: center;
+  color: #fff;
+  opacity: 0.4;
+  letter-spacing: 0.2rem;
+  font-size: 12px;
+  position: relative;
+  top: -20px;
+  right: 180px;
+}
